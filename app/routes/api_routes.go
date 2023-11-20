@@ -4,8 +4,9 @@ import (
 	"kibogo/app/handlers"
 	"kibogo/app/libraries"
 
-	"github.com/labstack/echo"
-	"github.com/labstack/echo/middleware"
+	//"github.com/labstack/echo/middleware"
+	"github.com/labstack/echo/v4"
+	"github.com/labstack/echo/v4/middleware"
 )
 
 func Api(route *echo.Group) {
@@ -23,4 +24,5 @@ func Api(route *echo.Group) {
 			return validate, nil
 		},
 	}))
-	appsRoute.GET("/test/handler", handlers.HelloWorld)
+	appsRoute.GET("/test/hello-world", handlers.HelloWorld)
+}

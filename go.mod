@@ -11,9 +11,9 @@ require (
 	github.com/go-sql-driver/mysql v1.7.1 // indirect
 	github.com/joho/godotenv v1.5.1
 	github.com/labstack/echo v3.3.10+incompatible
-	github.com/labstack/echo/v4 v4.11.1
+	github.com/labstack/echo/v4 v4.11.3
 	github.com/leodido/go-urn v1.2.4 // indirect
-	golang.org/x/crypto v0.11.0
+	golang.org/x/crypto v0.14.0
 	gorm.io/driver/mysql v1.5.1
 	gorm.io/driver/sqlserver v1.5.1
 	gorm.io/gorm v1.25.2

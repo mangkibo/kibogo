@@ -15,7 +15,7 @@ var DB *gorm.DB
 func getMySQLConnectionString() string {
 	dsn := fmt.Sprintf("%s:%s@tcp(%s:%s)/%s?charset=utf8mb4&parseTime=True&loc=Local",
 		Env("DB_USER"),
-		url.QueryEscape(Env("DB_PWD")),
+		Env("DB_PWD"),
 		Env("DB_HOST"),
 		Env("DB_PORT"),
 		Env("DB_NAME"))
